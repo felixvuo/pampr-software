@@ -1,0 +1,51 @@
+setup_name: "tail,pen2"
+world_file: "../scenes/shelves-back.xml"
+robot_file: "../klampex/data/robots/jaco.rob"
+robot_link_to_position: jaco_link_hand
+robot_configs_dir: "endpoints"
+robot_configs_glob: "gen*config"
+n_rounds_per_planner: 20
+eps: 0.25
+iter_batch_size: 50
+n_iter_batches: 1000
+planning_timeout_penalty: 2
+planning_timeout_sec: 60
+planners:
+ - type: "sbl"
+   restart: true
+   configs:
+     - perturbationRadius: 0.5
+     - perturbationRadius: 1.0
+     - perturbationRadius: 1.5
+     - perturbationRadius: 2.0
+ - type: "rrt*"
+   configs:
+     - perturbationRadius: 0.5
+     - perturbationRadius: 1.0
+     - perturbationRadius: 1.5
+     - perturbationRadius: 2.0
+ - type: "prm*"
+   configs:
+     - perturbationRadius: 0.5
+     - perturbationRadius: 1.0
+     - perturbationRadius: 1.5
+     - perturbationRadius: 2.0
+ - type: "lazyprm*"
+   configs:
+     - perturbationRadius: 0.5
+     - perturbationRadius: 1.0
+     - perturbationRadius: 1.5
+     - perturbationRadius: 2.0
+ - type: "lazyrrg*"
+   configs:
+     - perturbationRadius: 0.5
+     - perturbationRadius: 1.0
+     - perturbationRadius: 1.5
+     - perturbationRadius: 2.0
+n_train_test_splits: 10
+test_frac_endpoints: 0.25
+cp_switch_penalty_sec: 2
+cp_granularity: 5
+cp_pred_time_field: "time_plus_tail"
+eval_n_samples: 100
+eval_timeout_penalty: 2

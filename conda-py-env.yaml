@@ -1,0 +1,17 @@
+name: klampt
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas
+  - pyopengl
+  - ipython
+  - jupyterlab
+  - pyqt
+  - ipywidgets
+  - matplotlib
+  - scipy
+  - tqdm
+  - seaborn
+  - scikit-learn
+

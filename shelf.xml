@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world>
+  <terrain file="../terrains/plane.off" translation="0.0 0.0 -0.01"/>
+
+  <!-- four legs -->
+  <terrain file="../terrains/cube.off" scale="0.05 0.05 1.0" translation="0.4 -0.2 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../terrains/cube.off" scale="0.05 0.05 1.0" translation="0.4 0.2 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../terrains/cube.off" scale="0.05 0.05 1.0" translation="0.8 -0.2 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../terrains/cube.off" scale="0.05 0.05 1.0" translation="0.8 0.2 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <!-- two 'shelves' -->
+  <terrain file="../terrains/cube.off" scale="0.45 0.45 0.02" translation="0.4 -0.2 0.4">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../terrains/cube.off" scale="0.45 0.45 0.02" translation="0.4 -0.2 0.7">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+
+  <!-- DEFAULT ROBOT POSITION -->
+  <!-- <terrain file="../terrains/cube.off" scale="0.1 0.1 0.1" translation="0.0 0.0 0.0"> -->
+  <!--    <display color="0.4 0.3 1.0"/> -->
+  <!-- </terrain> -->
+
+</world>
